@@ -6,4 +6,5 @@ package:
     script:
         - "make package"
     artifacts:
-        - "stealth.zip"
+        paths:
+            - "stealth.zip"
