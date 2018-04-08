@@ -1,0 +1,9 @@
+image: "think/xcftools"
+stages:
+    - build
+package:
+    stage: build
+    script:
+        - "make package"
+    artifacts:
+        - "stealth.zip"
