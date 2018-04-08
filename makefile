@@ -1,6 +1,9 @@
-XCF2PNG = xcf2png
+BASE_DIR = ${shell pwd}
+SRC_DIR = ${BASE_DIR}/src
 
-SRC_DIR = ${shell pwd}/src
+XCF2PNG = xcf2png
+ABS2REL = ${BASE_DIR}/abs2rel
+
 
 XCF_SRC = ${shell find ${SRC_DIR} -name '*.xcf'}
 PNG_OUT = ${XCF_SRC:%.xcf=%.png}
@@ -21,7 +24,7 @@ package: stealth.zip
 stealth.zip: ${PNG_OUT} ${MCMETA_SRC}
 	@ for f in $^ ; do \
 		cd ${SRC_DIR} ;\
-		f=`realpath --relative-to=${SRC_DIR} "$$f"` ;\
+		f=`${ABS2REL} "$$f" ${SRC_DIR}` ;\
 		zip ../$@ "$$f" ;\
 	done
 
