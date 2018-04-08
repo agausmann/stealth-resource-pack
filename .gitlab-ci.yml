@@ -1,4 +1,4 @@
-image: "think/xcftools"
+image: "registry.gitlab.com/agausmann/stealth-resource-pack/builder"
 stages:
     - build
 package:
