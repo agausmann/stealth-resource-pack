@@ -1,0 +1,7 @@
+# Make output
+src/*.png
+stealth.zip
+
+# For storing default Minecraft assets for reference.
+# I can't ship these because of copyright.
+default/
