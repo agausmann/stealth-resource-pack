@@ -1,5 +1,5 @@
 # Make output
-src/*.png
+src/**/*.png
 stealth.zip
 
 # For storing default Minecraft assets for reference.
