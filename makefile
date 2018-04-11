@@ -16,7 +16,7 @@ clean:
 	-@ rm -f stealth.zip ${PNG_OUT}
 
 .PHONY: build
-build: ${PNG_OUT} ${MCMETA_SRC}
+build: ${PNG_OUT}
 
 .PHONY: package
 package: stealth.zip
