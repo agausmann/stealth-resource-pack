@@ -25,7 +25,7 @@ stealth.zip: ${PNG_OUT} ${MCMETA_SRC}
 	@ for f in $^ ; do \
 		cd ${SRC_DIR} ;\
 		f=`${ABS2REL} "$$f" ${SRC_DIR}` ;\
-		zip ../$@ "$$f" ;\
+		zip ${BASE_DIR}/$@ "$$f" ;\
 	done
 
 %.png: %.xcf
