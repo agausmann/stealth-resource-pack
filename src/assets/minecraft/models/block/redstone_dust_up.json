@@ -4,8 +4,8 @@
     },
     "elements": [
         {
-            "from": [ 6, 2, 0 ],
-            "to": [ 10, 18, 2 ],
+            "from": [ 6, 1, 0 ],
+            "to": [ 10, 17, 1 ],
             "faces": {
                 "south": { "uv": [ 6, 0, 10, 10 ], "texture": "#line", "tintindex": 0 },
                 "up": { "uv": [ 0, 0, 4, 2 ], "texture": "#line", "tintindex": 0 },

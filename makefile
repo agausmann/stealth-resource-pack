@@ -8,6 +8,7 @@ ABS2REL = ${BASE_DIR}/abs2rel
 XCF_SRC = ${shell find ${SRC_DIR} -name '*.xcf'}
 PNG_OUT = ${XCF_SRC:%.xcf=%.png}
 MCMETA_SRC = ${shell find ${SRC_DIR} -name '*.mcmeta'}
+JSON_SRC = ${shell find ${SRC_DIR} -name '*.json'}
 
 default: build
 
@@ -21,7 +22,7 @@ build: ${PNG_OUT}
 .PHONY: package
 package: stealth.zip
 
-stealth.zip: ${PNG_OUT} ${MCMETA_SRC}
+stealth.zip: ${PNG_OUT} ${MCMETA_SRC} ${JSON_SRC}
 	@ for f in $^ ; do \
 		cd ${SRC_DIR} ;\
 		f=`${ABS2REL} "$$f" ${SRC_DIR}` ;\
