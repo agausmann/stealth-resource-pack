@@ -1,0 +1,14 @@
+{
+    "textures": {
+        "power": "block/redstone_dust_power"
+    },
+    "elements": [
+        {
+            "from": [ 6, 1.01, 6 ],
+            "to": [ 10, 1.01, 10 ],
+            "faces": {
+                "up": { "uv": [ 8, 0, 12, 4 ], "texture": "#power" }
+            }
+        }
+    ]
+}
