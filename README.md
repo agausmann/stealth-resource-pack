@@ -3,13 +3,9 @@
 My oCd-inspired resource pack, designed to be non-intrusive, simplistic,
 and symmetric.
 
-
 ## Download
 
-File server coming soon! In the meantime, if you want to try the resource pack
-and provide feedback, you can download [`artifacts.zip`][artifacts], and
-install the _inner_ zip file.
-
+TODO
 
 ## Build
 
@@ -24,15 +20,15 @@ A `makefile` is provided in the repository root, with the following targets:
 - `make package` - Packages the output and meta files in `stealth.zip`
 - `make clean` - Removes all generated output files.
 
-
 ## License
 
-Copyleft (C) 2018 Adam Gausmann
+Copyright (C) 2021 Adam Gausmann
 
-This is a free work, you can copy, distribute, and modify it
-under the terms of the Free Art License
-http://artlibre.org/licence/lal/en/
+Stealth is licensed under a
+Creative Commons Attribution 4.0 International License.
+
+You should have received a copy of the license along with this
+work. If not, see <http://creativecommons.org/licenses/by/4.0/>.
 
 
-[artifacts]: https://gitlab.com/AGausmann/stealth-resource-pack/-/jobs/artifacts/master/download?job=package
 [xcftools]: https://github.com/j-jorge/xcftools
