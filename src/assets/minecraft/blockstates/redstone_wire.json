@@ -1,35 +1,24 @@
 {
     "multipart": [
         {
-            "when": { "OR": [
-                { "north": "side|up" },
-                { "north": "none", "east": "none", "south": "side|up", "west": "none" },
-                { "north": "none", "east": "none", "south": "none", "west": "none" }
-            ]},
+            "apply": {
+                "model": "block/redstone_dust_dot"
+            }
+        },
+        {
+            "when": { "north": "side|up" },
             "apply": { "model": "block/redstone_dust_side" }
         },
         {
-            "when": { "OR": [
-                { "east": "side|up" },
-                { "north": "none", "east": "none", "south": "none", "west": "side|up" },
-                { "north": "none", "east": "none", "south": "none", "west": "none" }
-            ]},
+            "when": { "east": "side|up" },
             "apply": { "model": "block/redstone_dust_side", "y": 90 }
         },
         {
-            "when": { "OR": [
-                { "south": "side|up" },
-                { "north": "side|up", "east": "none", "south": "none", "west": "none" },
-                { "north": "none", "east": "none", "south": "none", "west": "none" }
-            ]},
+            "when": { "south": "side|up" },
             "apply": { "model": "block/redstone_dust_side", "y": 180 }
         },
         {
-            "when": { "OR": [
-                { "west": "side|up" },
-                { "north": "none", "east": "side|up", "south": "none", "west": "none" },
-                { "north": "none", "east": "none", "south": "none", "west": "none" }
-            ]},
+            "when": { "west": "side|up" },
             "apply": { "model": "block/redstone_dust_side", "y": 270 }
         },
 
